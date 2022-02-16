@@ -1,0 +1,227 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 100px 1fr 200px 1fr 600px 600px 300px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav{
+    grid-column: 2 / span 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+}
+
+.nav li {
+    list-style-type: none;
+    padding: 2%;
+    padding-right: 5%;
+}
+
+.premier {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.premier img {
+    height: 100%;
+    width: auto;
+    padding-left: 5%;
+}
+
+.description{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    background-color: rgb(250, 246, 246);
+    display: flex;
+    flex-direction: column;
+}
+
+.description h1 {
+    position: relative ;
+    top: 0%;
+    left: 10%;
+   font-size: 80px;
+   transform: rotate(-10deg);
+   font-family: 'Satisfy', cursive;
+   z-index: 2;
+}
+
+.description h3 {
+   padding-left: 10%;
+   position: relative;
+   font-size: 30px;
+}
+
+.description a:hover {
+    color: blue;
+    transition: color 1s;
+}
+
+.sophie {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(250, 246, 246);
+    z-index: 1;
+}
+
+.sophie img {
+    border-radius: 50%;
+    padding-top:2% ;
+    padding-bottom:2% ;
+    flex-shrink: 3;
+    min-width: 550px;
+}
+
+.guidearrow {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    display: flex;
+    background-color: rgb(250, 246, 246);
+}
+
+ .guidearrow img {
+    transform: rotate(15deg);
+    position: relative;
+    bottom: 12%;
+    right: 2%;
+    z-index: 2;
+}
+
+.guidearrow h3 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 40px;
+    padding-left: 5%;
+    padding-right: 3%;
+}
+
+@media only screen and (max-width: 1412px) {
+    .sophie {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+}
+
+.content {
+    display: flex;
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 1;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px ;
+}
+
+
+
+#blog, #articles, #videos{
+    padding: 5%;
+    background-color: rgb(250, 246, 246);
+    box-shadow: 2px 2px rgb(216, 214, 214);
+    text-align: center;
+    position: relative;
+    color: rgb(71, 69, 69);
+    width: 250px;
+    height: 350px;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.content p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a #blog:hover {
+    top: -3px;
+    color: rgb(2, 66, 2);
+}
+a #articles:hover {
+    top: -3px;
+    color: rgb(2, 66, 2);
+}
+a #videos:hover {
+    top: -3px;
+    color: rgb(2, 66, 2);
+}
+
+.blogimg {
+    width: 200px;
+    height: 200px;
+}
+
+.containerinfo {
+    background-color: rgb(250, 246, 246);
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1;
+    display: inline-flex;
+}
+
+.sophiegraduate {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+}
+
+.sophiegraduate img {
+    width: 400px;
+    height: auto;
+    position: relative;
+    left: 5%;
+    top: 5%;
+}
+
+.aboutme {
+    grid-column: 2 / span 1;
+    grid-row: 5 / span 1;
+    position: relative;
+    left: 2%;
+    bottom: 13%;
+    margin-bottom: 10%;
+}
+
+.aboutme h2 {
+    font-size: 80px;
+   transform: rotate(-5deg);
+   font-family: 'Satisfy', cursive;
+   padding: 5%;
+}
+
+.aboutmetext {
+    font-size: 25px;
+    justify-self: flex-end;
+    align-self: flex-end;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.socials {
+    grid-column:  1 / span 2;
+    grid-row: 6 / span 1;
+}
+
+footer {
+    color: white;
+    grid-column: 1 / span 2;
+    grid-row: 7 / span 1;
+    background-color: black;
+}
+
