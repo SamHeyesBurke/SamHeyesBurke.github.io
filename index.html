@@ -1,110 +1,115 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Sophie Drew Media</title>
-        <link rel="stylesheet" href="resources/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:wght@500&family=Rubik&family=Satisfy&display=swap" rel="stylesheet">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="resources/SHB logo.jpeg">
+    <title>Samuel Heyes-Burke</title>
+</head>
+<body>
     
-    <body>
-        <!-- grid container -->
+    <div class="container">
 
-        <div class="grid">
-        
-        <!--Main content-->
-        <!--Navigation-->
-            <div class="nav"> 
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">ARTICLES</a></li>
-                <li><a href="#">NEWSLETTER</a></li>
-                <li><a href="#">CONTACT ME</a></li>
+        <!--Header section-->
+
+        <div class="header">
+
+
+            <div id="myname">
+                 <h1>Samuel Heyes-Burke</h1>
             </div>
 
-        <!--Premier radio logo-->
-        <div class="premier">
-            <img src="resources/premier radio.png" alt="Premier radio">
+            <div id="navcontainer">
+                <nav>
+                    <ul>
+                         <li id="aboutmelist"><a href="#About">About</a></li>
+                         <li><a href="#Projects">Projects</a></li>
+                         <li id="skillslist"><a href="#Skills">Skills</a></li>
+                         <li id="contactlist"><a href="#Contact">Contact</a></li>
+                    </ul>
+                 </nav>
+            </div>
         </div>
 
-        <!--Description-->
+        <!--About me section-->
+
+        <div class="about">
+
+                <h2>About Me</h2>
             
-            <div class="description">
-                <h1><i>"Professional Talker"</i></h1>
-                <h3>Hello there! My name is Sophie Drew and I currently work as a radio journalist for <a href="https://www.premierchristianradio.com/">Premier Radio</a>. I hope you enjoy my site 😊.</h3>
-            </div>
+            <div id="aboutmecontent">
 
-            <!--Photo of Sophie-->
+                <div id="mydescription">
+                   <p>Hello, my name is Samuel. I am a full-stack development student. My goal is to complete my courses while working with other programmers to improve my skills and secure a job in the computer programming field. <br> <br> I began my coding journey in October 2021, and have completed several projects within my coursework, while also working on my own independent projects. <br> <br> In my free time, I enjoy cycling, hanging out with friends, and coaching rowing!</p> 
+               </div>
 
-            <div class="sophie">
-                <img src="resources/76607500_3129564980391688_4454813317193531392_n.jpeg" alt="Picture of me!">
-             </div>
-
-             <!--guidearrow-->
-             <div class="guidearrow">
-                 <h3>Check out my work</h3>
-                 <img src="resources/arrow 2.png" alt="#">
-             </div>
-
-             <!--Content section-->
-             <div class ="content">
-
-                <a href="#">
-                 <div id="blog">
-                     <img class="blogimg" src="resources/hand_writing-removebg-preview.png" alt="">
-                     <h2>Blog Posts</h2>
-                     <p>Writing about all things me!</p>
-                 </div>
-                 </a>
-
-                 <a href="#">
-                 <div id="articles">
-                     <img class="blogimg" src="resources/newspaper_2-removebg-preview.png" alt="">
-                     <h2>Articles</h2>
-                     <p>Links to some of my favourate published articles!</p>
-                 </div>
-                 </a>
-
-                <a href="#">
-                 <div id="videos">
-                     <img class="blogimg" src="resources/filming.svg" alt="">
-                     <h2>Videos</h2>
-                     <p>Some content that I made during my journey!</p>
-                 </div>
-                 </a>
-
-             </div>
-
-        <!--who am I?-->
-        <div class="containerinfo">
-
-             <div class="sophiegraduate">
-                <img src="resources/received_517642152643334.JPEG" alt="Another picture of me!">
-            </div>
-
-            <div class="aboutme">
-                <h2>So who am I?...</h2>
-                <div class="aboutmetext">
-                <p>I am a first class journalism graduate with 2 years expereince working full time in the industry. I have worked for <a href="#">Reach PLC</a> and I am currently working for <a href="#">Premier radio</a>. <br> <br> I am hoping to put out weekly blog posts of my journey! You can also follow my journey by following my socials ✨</p>
+               <div id="myphotocontainer">
+                    <img id="myphoto" src="resources/PictureOfMe.JPG" alt="Picture of Me">
                 </div>
+
+            </div>
+
+
+        </div>
+    
+
+        <!--Mystacksection-->
+
+        <div class="stack">
+            <h2>My stack</h2>
+
+         <div class="stackimg">
+         <div class="stackcontainer" id="jsfig">
+                <img src="resources/javascript.png" alt="javascript logo">
+                <figcaption id="figcaption" >JavaScript</figcaption>
+            </div>
+            <div class="stackcontainer">
+                <img src="resources/css.png" alt="css logo">
+                <figcaption id="figcaption">CSS3</figcaption>
+            </div>
+            <div class="stackcontainer" id="HTMLfig">
+                <img src="resources/HTML.png" alt="HTML logo">
+                <figcaption id="figcaption">HTML5</figcaption>
+            </div> 
+            <div class="stackcontainer" id="nodefig">
+                <img src="resources/nodejs.png" alt="node.js logo">
+                <figcaption id="figcaption">Node.js</figcaption>
+            </div>
+            <div class="stackcontainer" id="githubfig">
+                <img src="resources/github.png" alt="github logo">
+                <figcaption id="figcaption">GitHub</figcaption>
+            </div>
+            <div class="stackcontainer">
+                <img src="resources/commandline.png" alt="command line logo">
+                <figcaption id="figcaption">Command Line</figcaption>
+            </div>
+        </div>
+        </div>
+
+         <!--Projects section-->
+        
+        <div class="projects">
+
+            <div id="TeaCozy">
+                <!--<img src="resources/teacozy.jpeg" alt=""> -->
+                <h3>Tea Cosy Website</h3>
+            </div>
+            
+            <div id="SpacePep">
+
+            </div>
+
+            <div id="NumGuess">
+                
             </div>
 
         </div>
 
+    </div>
 
-        <!--Socials-->
-            <div class="socials">
-              <h3>Check out my socials -> </h3>
-            </div>
+<!--#404040-->
 
-            <footer>
-                <p>© Sophie Drew 2022. Built by <a href="@">Samuel Heyes-Burke</a></p>
-            </footer>
-
-
-
-       </div>
-
-    </body>
-
+</body>
 </html>
