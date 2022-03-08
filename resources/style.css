@@ -7,7 +7,7 @@ html {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr 0.5fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.4fr 2fr 1fr;
     row-gap: 20px;
 }
 
@@ -148,9 +148,18 @@ About me section
 /* My stack section 
 ----------------------------------------------------
 */
+
+#projecttitle {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+
 .stack{
     text-align: center;
-    transition: ease-in 0.5s;
     border: solid white 0.2px;
 }
 
@@ -189,12 +198,6 @@ figcaption {
     bottom: 10px;
 }
 
-.stack:hover {
-    background-color: rgb(250, 249, 249);
-    border: solid rgb(201, 197, 197) 0.2px;
-}
-
-
 .stackcontainer:hover{
     position: relative;
     bottom: 10px;
@@ -219,38 +222,63 @@ figcaption {
 /* Projects section
 -----------------------------------------------------
 */
-
-#piano {
-    width: 100%;
-    display: flex;
-    background-color: blanchedalmond;
+.projects {
+    grid-row: 4 / span 1;
     justify-content: center;
-    height: 100%;
-    align-items: flex-start;
-
 }
 
+.projectdiv {
+    display: inline-flex;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    height: fit-content;
+    flex-direction:row;
+    justify-content: center;
+}
 
-#pianocontainer {
+.projectcontainer {
     width: 45%;
     height: fit-content;
-    background-color: blue;
     min-width: 350px;
-    position: flex;
-    justify-content: flex-start;
+    max-width: 500px;
+    margin: 5px;
 }
 
 .projectimg {
     width: 100%;
+    opacity: 0.85;
+    transition: ease-in 0.2s;
+    border: 1.5px solid white;
 }
 
 
-#pianotext {
+.projecttext {
     flex-direction: column;
-    background-color: brown;
     padding: 4%;
     height: fit-content;
+    width: 30%;
+    margin: 5px;
+    align-self: center;
 }
 
+.projectimg:hover {
+    opacity: 1;
+    border: 1.5px solid black;
+}
+
+@media screen and (max-width: 640px) {
+    .projectdiv {
+        flex-direction: column;
+    }
+    .projecttext {
+        width: 65%;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 65px;
+        padding: 0%;
+    }
+}
 
 
