@@ -7,8 +7,17 @@ html {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr 0.4fr 2fr 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.2fr 1fr 0.5fr 0.1fr;
     row-gap: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: solid black 0.2rem;
+    font-size: 1.5rem;
 }
 
 /*
@@ -42,7 +51,6 @@ nav, ul {
 li, .navelement {
     margin-left: 8%;
     margin-right: 8% ;
-    text-decoration: none;
     list-style-type: none;
     color: black;
     font-size: 1.5rem;
@@ -55,9 +63,7 @@ li, .navelement {
 }
 
 a:hover {
-    text-decoration: underline;
-    color: rgb(97, 84, 84);
-    transition: all 0.5s;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 820px ) {
@@ -87,15 +93,11 @@ About me section
 -----------------------------------------------------------------
 */
 
-.about {
+#about {
     grid-row: 2 / span 1;
     margin-top: 5rem ;
 }
 
-.about h2 {
-    border-bottom: solid black 0.2rem;
-    font-size: 2rem;
-}
 
 #aboutmecontent {
     display: inline-flex;
@@ -145,23 +147,9 @@ About me section
     }
 }
 
-/* My stack section 
+/* skills section 
 ----------------------------------------------------
 */
-
-#projecttitle {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    text-decoration: underline;
-}
-
-
-.stack{
-    text-align: center;
-    border: solid white 0.2px;
-}
 
 .stackimg {
     grid-row: 3;
@@ -176,7 +164,6 @@ About me section
     max-width: 100px;
     height: fit-content;
     margin-left: 40px;
-    margin-bottom: 40px;
     transition: ease-in 0.5s;
     position: relative;
     bottom: 0px;
@@ -222,7 +209,7 @@ figcaption {
 /* Projects section
 -----------------------------------------------------
 */
-.projects {
+#projects {
     grid-row: 4 / span 1;
     justify-content: center;
 }
@@ -281,4 +268,99 @@ figcaption {
     }
 }
 
+/* Contact me section
+----------------------------------------------------------
+*/
 
+  /* Add a background color and some padding around the form */
+#contactme {
+    border-radius: 5px;
+    padding: 20px;
+    grid-row: 5/span 1;
+  }
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: rgb(110, 108, 108);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: rgb(61, 60, 60);
+  }
+  
+
+  /* footer sectiion
+  --------------------------------------------------
+  */
+
+  footer {
+      grid-row: 6/ span 1;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-top: solid black 0.2rem;
+  }
+
+  .footer {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 30px;
+    color: white;
+    transition: ease-in 0.2s;
+  }
+
+  .footer h4 {
+      text-align: center;
+  }
+
+  #emailcontainer, #githubcontainer, #linkedincontainer {
+      width: fit-content;
+      height: fit-content;
+      background-color: rgb(245, 245, 245);
+      transition: ease-in 0.1s;
+      
+  }
+
+  #githubcontainer {
+      border-radius: 50%;
+  }
+
+  #linkedincontainer {
+      border-radius: 20%;
+  }
+ 
+
+  .footercontainer img {
+      width: 80px;
+      height: 70px;
+  }
+
+
+  #emailcontainer:hover, #githubcontainer:hover, #linkedincontainer:hover {
+      background-color: rgb(228, 222, 222);
+  }
+
+  .footer:hover {
+      color: black;
+  }
+  
