@@ -7,7 +7,7 @@ html {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.5fr 0.2fr 1fr 0.5fr 0.1fr;
+    grid-template-rows: 0.05fr 0.5fr 0.2fr 1fr 0.5fr 0.1fr;
     row-gap: 20px;
 }
 
@@ -156,6 +156,7 @@ About me section
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin-top: 50px;
 }
 
@@ -167,6 +168,9 @@ About me section
     transition: ease-in 0.5s;
     position: relative;
     bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .stackcontainer img {
