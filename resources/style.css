@@ -133,7 +133,8 @@ About me section
 #myphoto {
     width: 100%;
     border-radius: 10%;
-    border: 0.2rem solid black;
+    border: 0.1rem solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @media screen and (max-width: 980px) {
@@ -180,17 +181,20 @@ About me section
     max-width: 100px;
     height: fit-content;
     margin-left: 40px;
-    transition: ease-in 0.5s;
+    transition: ease-in 0.3s;
     position: relative;
     bottom: 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .stackcontainer img {
     width: 100%;
 }
+
+
 
 figcaption {
     margin-top: 10px;
@@ -200,18 +204,13 @@ figcaption {
     font-weight: bolder;
 }
 
-#htmlfig, #nodefig {
-    position: relative;
-    bottom: 10px;
-}
-
 .stackcontainer:hover{
     position: relative;
-    bottom: 10px;
+    bottom: 20px;
 }
 
 #nodefig:hover, #htmlfig:hover {
-    bottom: 20px;
+    bottom: 30px;
 }
 
 .stackcontainer:hover > figcaption {
@@ -245,8 +244,8 @@ figcaption {
 }
 
 .projectcontainer {
-    width: 45%;
-    height: fit-content;
+    width: 150px;
+    height: 210px;
     min-width: 350px;
     max-width: 500px;
     margin: 5px;
@@ -254,6 +253,7 @@ figcaption {
 
 .projectimg {
     width: 100%;
+    height: 100%;
     opacity: 0.85;
     transition: ease-in 0.2s;
     border: 1.5px solid white;
@@ -356,9 +356,9 @@ input[type=text], select, textarea {
   #emailcontainer, #githubcontainer, #linkedincontainer {
       width: fit-content;
       height: 70px;
-      background-color: rgb(245, 245, 245);
+      background-color: rgb(236, 228, 213);
       transition: ease-in 0.1s;
-      
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   #githubcontainer {
@@ -373,6 +373,7 @@ input[type=text], select, textarea {
   .footercontainer img {
       width: 80px;
       height: 70px;
+      transition: ease-in 0.2s;
   }
 
 
@@ -382,5 +383,10 @@ input[type=text], select, textarea {
 
   .footer:hover {
       color: black;
+  }
+
+  .footercontainer img:hover {
+      width: 90px;
+      height: 73px;
   }
   
